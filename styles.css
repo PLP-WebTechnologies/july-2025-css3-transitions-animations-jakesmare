@@ -1,0 +1,58 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #f0f9f1;
+  color: #333;
+}
+
+header {
+  background: #2da581;
+  color: white;
+  padding: 20px;
+}
+
+.tip-card {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.tip-card:hover {
+  transform: scale(1.05);
+}
+
+/* Hidden box for random tips */
+#randomTipBox {
+  margin-top: 30px;
+  padding: 20px;
+  width: 70%;
+  max-width: 400px;
+  border-radius: 10px;
+  background: #b87b0e;
+  color: white;
+  font-size: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Animation classes */
+.hidden {
+  display: none;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
